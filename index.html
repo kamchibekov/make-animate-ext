@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cropper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MA!</title>
+</head>
+<body>
+
+<div class="global-wrapper">
+
+    <div class="maContainer">
+
+        <div class="ma-file-input-DnD">
+            <div><span> You can drag and drop images here </span>
+                <br>
+                or
+                <br>
+                <input type="file" id="ma_file_input" accept="image/*" max="8" multiple/>
+            </div>
+        </div>
+
+        <div class="ma_image_container clearfix">
+            <span> Uploaded files will appear here </span>
+        </div>
+
+        <Button id="ma_animate_btn">Animate pics</Button>
+
+        <div id="canvas_container" class="inline">
+            <canvas id="ma_canvas" height="720" width="720"></canvas>
+        </div>
+
+        <div class="cropped-img-preview inline"></div>
+
+        <button id="ma_imgRotate"> Rotate</button>
+        <img id="ma_gif_preview" src="" alt="">
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="jsgif-master/LZWEncoder.js"></script>
+<script type="text/javascript" src="jsgif-master/NeuQuant.js"></script>
+<script type="text/javascript" src="jsgif-master/GIFEncoder.js"></script>
+<script type="text/javascript" src="jsgif-master/b64.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/cropper.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+</body>
+</html>

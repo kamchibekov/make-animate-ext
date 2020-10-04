@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.global-wrapper {
+    padding: 15px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.inline {
+    display: inline-block !important;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.maContainer .ma_image_container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+.maContainer .ma_image_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.maContainer .ma_image_wrap img {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.maContainer .ma_image_wrap:hover:after {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    font-size: 20px;
+}
+
+.maContainer .ma_image_wrap.check-mark:after, .ma_image_wrap:hover.check-mark:after {
+    content: "\2713 ";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    font-size: 20px;
+}
+
+.maContainer #ma_gif_preview {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.maContainer #canvas_container {
+    width: 70%;
+    max-width: 720px;
+    display: block;
+}
+
+.maContainer .cropped-img-preview {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .maContainer #canvas_container {
+        width: 100%;
+    }
+}
+
+.maContainer #ma_canvas {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.maContainer .ma-file-input-DnD {
+    padding: 10px;
+    background: rgba(221, 221, 221, 0.48);
+    border-radius: 4px;
+    border: 2px dashed #c3bfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 50px;
+}
